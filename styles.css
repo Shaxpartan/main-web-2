@@ -1,85 +1,73 @@
-/* Description box styles */
-
-.description-box {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    opacity: 0; /* Initial opacity for the fade-in animation */
-    animation: fade-in 1s ease-in-out forwards; /* Animation definition */
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Animation for description box */
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Center alignment for navigation bar */
-.top-nav {
-    background-color: #69D531;
+/* Header styles */
+header {
+    background-color: #69D531; /* Lime green */
     color: #fff;
+    padding: 20px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
-.top-nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.top-nav h1.logo {
+.logo {
     font-size: 1.5rem;
     margin: 0;
 }
 
-.top-nav ul.nav-links {
+nav ul {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
 
-.top-nav ul.nav-links li {
+nav ul li {
     margin-right: 20px;
 }
 
-.top-nav ul.nav-links li:last-child {
+nav ul li:last-child {
     margin-right: 0;
 }
 
-.top-nav ul.nav-links a {
+nav ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-    .top-nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
-    }
-
-    .top-nav ul.nav-links {
-        margin-top: 20px;
-    }
+/* Company description section styles */
+#company-description {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
 }
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description-box p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Add more styles for the rest of your content as needed */
