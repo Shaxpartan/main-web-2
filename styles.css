@@ -1,43 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkillSyncc LLC</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Twitter Card metadata -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SkillSyncc LLC">
-    <meta name="twitter:description" content="SkillSyncc LLC: Empowering Innovation Through Strategic Holding. SkillSyncc LLC serves as a dynamic holding company that fuels innovation and entrepreneurship across a diverse spectrum of ventures. With a commitment to centralizing control and decision-making, SkillSyncc LLC creates a supportive ecosystem for its subsidiaries, including cutting-edge apps and early staff-led initiatives.">
-    <meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1166724856658788432/1169918661054697532/Copy_of_Black_And_White_Aesthetic_Minimalist_Modern_Simple_Typography_Coconut_Cosmetics_Logo1.png?ex=655726a8&is=6544b1a8&hm=8c3ed429a7790ed2d548a9b9cb6244dca74a724a37aa937a03728a246c53372d&">
-</head>
-<body>
-    <header>
-        <nav class="top-nav">
-            <h1 class="logo">SkillSyncc LLC</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="founders.html">Founders</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="legal.html">Legal</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="company-description">
-        <div class="container">
-            <h2 class="section-title">About SkillSyncc LLC</h2>
-            <div class="description-box">
-                <p>SkillSyncc LLC serves as a dynamic holding company that fuels innovation and entrepreneurship across a diverse spectrum of ventures. With a commitment to centralizing control and decision-making, SkillSyncc LLC creates a supportive ecosystem for its subsidiaries, including cutting-edge apps and early staff-led initiatives.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Rest of your content -->
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
 
-    <footer>
-        <div class="container">
-            <p class="copyright">&copy; 2023 SkillSyncc LLC. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
+/* Header styles */
+header {
+    background-color: #69D531; /* Lime green */
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+/* Company description section styles */
+#company-description {
+    background: linear-gradient(to right, #e6e6e6, #f0f0f0);
+    padding: 40px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description-box p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Add more styles for the rest of your content as needed */
