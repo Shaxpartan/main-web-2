@@ -1,3 +1,27 @@
+/* Description box styles */
+
+.description-box {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 0; /* Initial opacity for the fade-in animation */
+    animation: fade-in 1s ease-in-out forwards; /* Animation definition */
+}
+
+/* Animation for description box */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Center alignment for navigation bar */
 .top-nav {
     background-color: #69D531;
