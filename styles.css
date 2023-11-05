@@ -1,16 +1,16 @@
 /* Global styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc; /* Lighter background */
+    color: #4a4a4a; /* Darker text for better contrast */
     margin: 0;
     padding: 0;
 }
 
 /* Header styles */
 header {
-    background-color: #69D531; /* Lime green */
-    color: #fff;
+    background-color: #2c3e50; /* Darker header color */
+    color: #ecf0f1; /* Lighter text color for contrast */
     padding: 20px 0;
     position: fixed;
     top: 0;
@@ -21,8 +21,9 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Slightly larger logo */
     margin: 0;
+    font-weight: bold; /* Bold logo */
 }
 
 nav ul {
@@ -40,34 +41,49 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
+    color: #ecf0f1; /* Consistent with header text color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Added transform for hover effect */
+}
+
+nav ul li a:hover {
+    color: #bdc3c7; /* Lighter color on hover */
+    transform: scale(1.05); /* Slight scale on hover for interactive effect */
 }
 
 /* Company description section styles */
 #company-description {
-    background: linear-gradient(to right, #e6e6e6, #f0f0f0);
-    padding: 40px;
+    background: linear-gradient(to right, #f7f9fc, #ecf0f1); /* Subtle gradient */
+    padding: 60px; /* More padding for better spacing */
     text-align: center;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 3rem; /* Larger section title */
+    margin-bottom: 30px; /* More margin for better spacing */
+    color: #2c3e50; /* Darker color for emphasis */
 }
 
 .description-box {
     background-color: #fff;
-    padding: 20px;
+    padding: 30px; /* More padding for better readability */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
 }
 
 .description-box p {
-    font-size: 1.2rem;
-    color: #333;
-    line-height: 1.6;
+    font-size: 1.3rem; /* Slightly larger text for better readability */
+    color: #4a4a4a; /* Consistent with global text color */
+    line-height: 1.7; /* Better line spacing */
 }
 
-/* Add more styles for the rest of your content as needed */
+/* Footer styles */
+footer {
+    background-color: #2c3e50; /* Consistent with header */
+    color: #ecf0f1; /* Lighter text for contrast */
+    padding: 20px 0; /* Consistent padding with header */
+}
+
+footer p {
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
