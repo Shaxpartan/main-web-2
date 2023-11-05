@@ -1,35 +1,4 @@
-nav {
-    text-align: center;
-}
-
-nav ul {
-    display: inline-block;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-/* Update the center class to center the text */
-.center {
-    text-align: center;
-}
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    transition: background-color 0.3s ease;
-    margin: 0;
-    padding: 0;
-}
-
-/* Top navigation bar styles */
+/* Center alignment for navigation bar */
 .top-nav {
     background-color: #69D531;
     color: #fff;
@@ -40,7 +9,7 @@ body {
     z-index: 1000;
     transition: background-color 0.3s ease, opacity 0.3s ease;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 0;
 }
@@ -54,6 +23,7 @@ body {
 
 .top-nav h1.logo {
     font-size: 1.5rem;
+    margin: 0; /* Remove margin to center logo */
 }
 
 .top-nav ul.nav-links {
@@ -62,6 +32,7 @@ body {
     margin: 0;
     padding: 0;
     justify-content: center;
+    align-items: center; /* Center the links vertically */
 }
 
 .top-nav ul.nav-links li {
@@ -77,14 +48,4 @@ body {
     color: #fff;
     font-size: 1rem;
     transition: color 0.3s ease;
-}
-
-/* Hide the top bar when scrolling down */
-.top-nav.scrolled {
-    opacity: 0;
-}
-
-/* Center alignment */
-.center {
-    text-align: center;
 }
