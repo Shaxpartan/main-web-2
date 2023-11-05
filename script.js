@@ -1,20 +1,17 @@
-// Example code to toggle navigation bar on scroll for mobile
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    if (window.scrollY > 100) {
-        header.style.opacity = '0.8';
-    } else {
-        header.style.opacity = '1';
-    }
-});
+// Function to update the top navigation bar's opacity based on scroll position
+function updateNavOpacity() {
+    const topNav = document.querySelector('.top-nav');
+    const scrollY = window.scrollY;
 
-// Example code to add functionality to your CTA button
-const ctaButton = document.querySelector('.cta-button');
-ctaButton.addEventListener('click', function(event) {
-    // Add your action here, e.g., redirect to a link or display a message
-    alert('You clicked the CTA button!');
-    // Prevent the default behavior of the link
-    event.preventDefault();
-});
+    if (scrollY > 100) {
+        topNav.classList.add('scrolled');
+    } else {
+        topNav.classList.remove('scrolled');
+    }
+}
+
+// Call the function when the page loads and on scroll
+window.addEventListener('load', updateNavOpacity);
+window.addEventListener('scroll', updateNavOpacity);
 
 // You can add more JavaScript code as needed for your specific functionality
